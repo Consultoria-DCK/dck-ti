@@ -1,1 +1,35 @@
-<p>header works!</p>
+<nav class= "navbar navbar-nav navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <a class="navbar-brand"  href="#"> {{ title }}</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+&nbsp; &nbsp; &nbsp; &nbsp;
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" routerLink="/dev">{{ menu[0] }}</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" routerLink="/be/microservicios">{{ menu[1] }}</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" routerLink="/qa">{{ menu[2] }}</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" routerLink="/aquiyo">{{ menu[3] }}</a>
+      </li>
+    </ul>
+    <ul class="navbar-nav" >
+      <li class="nav-item">
+        <a href="{{ linkGitPersonal }}" title="Repositorio Git">
+          <img class="rounded-circle" src="assets/img/Octocat.png" width="45px" height="45px"/>
+        </a>
+      </li>
+        <!--<li class="nav-item">
+          <a href="{{ linkBlog }}" title="Blog uxiliar">
+            <img class="rounded-circle" src="assets/blog.jpg" width="45px" height="45px" />
+          </a>
+        </li>-->
+      </ul>
+  </div>
+</nav>
